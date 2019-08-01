@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-slider": "/dist/slider/index",
+    "van-radio": "/dist/radio/index",
+    "van-radio-group": "/dist/radio-group/index"
+  }
+}

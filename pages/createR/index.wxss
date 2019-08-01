@@ -1,0 +1,115 @@
+/* pages/createR/index.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+  background-color: #3b4256;
+}
+
+.top {
+  width: 740rpx;
+  height: 100%;
+  padding: 5rpx;
+}
+
+.top-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: warp;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+}
+
+.top-1-1 {
+  width: 150rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 25rpx;
+}
+
+.top-1-2 {
+  width: 450rpx;
+}
+
+.top-1-3 {
+  width: 100rpx;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.651);
+  font-size: 25rpx;
+}
+
+.radio {
+  width: 740rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 4px solid #32364a;
+  padding: 5rpx;
+}
+
+.radio .radio_ {
+  width: 140rpx;
+  float: left;
+}
+
+.radio .radio_ span {
+  color: #fff;
+}
+
+.radio .btn {
+  float: right;
+}
+
+.top-1 span, .radio span {
+  font-size: 25rpx;
+}
+
+.identity {
+  width: 740rpx;
+  height: 100%;
+  border-top: 15rpx solid #32364a;
+  padding: 5rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.identity-s {
+  width: 165rpx;
+  padding: 5rpx;
+  position: relative;
+}
+
+.identity-s image {
+  width: 165rpx;
+  height: 190rpx;
+  border-radius: 15rpx;
+}
+
+.identity-s span {
+  color: #fff;
+  font-size: 25rpx;
+  position: relative;
+  left: 50rpx;
+}
+
+.identity-s .tips {
+  position: absolute;
+  color: black;
+  font-size: 25rpx;
+  background-color: #fff;
+  width: 45rpx;
+  height: 45rpx;
+  line-height: 23px;
+  left: 80%;
+  top: -6rpx;
+  text-align: center;
+  -webkit-border-radius: 24px;
+  border-radius: 45rpx;
+}
+
+.btnCreate {
+  text-align: center;
+  padding: 50rpx;
+}

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class='box' style='height:{{winHeight}}px'>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <image class='index_img' src='../../images/share.png'></image>
+        <image class='index_img' style='left:330rpx' src='../../images/course.png'></image>
+      </block>
+    </view>
+  </view>
+  <view class='_room' bindtap='create_room'>
+    <span>创建房间</span>
+    <image src='../../images/create_room.png'></image>
+  </view>
+  <view class='_room' bindtap='join_room'>
+    <span>加入房间</span>
+    <image src='../../images/witch3.png'></image>
+  </view>
+</view>

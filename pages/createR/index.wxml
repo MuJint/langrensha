@@ -1,0 +1,103 @@
+<!--pages/createR/index.wxml-->
+<view class='container'>
+  <view class='top'>
+    <view class='top-1'>
+      <view class='top-1-1'>参加人数</view>
+      <view class='top-1-2'>
+        <van-slider value="{{person_step}}" min='56.25' max='100' bar-height="4px" active-color="yellow" bind:drag="onDrag" />
+      </view>
+      <view class='top-1-3'>{{sumPerson}}</view>
+    </view>
+    <view class='top-1'>
+      <view class='top-1-1'>狼人人数</view>
+      <view class='top-1-2'>
+        <van-slider value="{{wolf_step}}" min='60' max='100' bar-height="4px" active-color="yellow" bind:drag="onDrag_wolf" />
+      </view>
+      <view class='top-1-3'>{{sumWolf}}</view>
+    </view>
+  </view>
+  <view class='radio'>
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <view class='radio_'>
+        <van-radio name="1" checked-color="#FFFF00">
+          <span>屠城</span>
+        </van-radio>
+      </view>
+      <view class='radio_'>
+        <van-radio name="2" checked-color="#FFFF00">
+          <span>屠边</span>
+        </van-radio>
+      </view>
+    </van-radio-group>
+    <van-button custom-class="btn" type="warning" plain size='small' bind:click='setIdentity'>推荐身份设置</van-button>
+  </view>
+  <view class='identity'>
+    <view class='identity-s' data-index="1" bindtap='identityClick'>
+      <image src='../../images/hunter.jpg'></image>
+      <span>猎人</span>
+      <view class='tips'>{{initPerson.hunter}}</view>
+    </view>
+    <view class='identity-s' data-index="2" bindtap='identityClick'>
+      <image src='../../images/witch.jpg'></image>
+      <span>女巫</span>
+      <view class='tips'>{{initPerson.witch}}</view>
+    </view>
+    <view class='identity-s' data-index="3" bindtap='identityClick'>
+      <image src='../../images/prophet.jpg'></image>
+      <span>预言家</span>
+      <view class='tips'>{{initPerson.prophet}}</view>
+    </view>
+    <view class='identity-s' data-index="4" bindtap='identityClick'>
+      <image src='../../images/wolf.jpg'></image>
+      <span>狼人</span>
+      <view class='tips'>{{initPerson.wolf}}</view>
+    </view>
+  </view>
+  <view class='identity' style='border:0'>
+    <view class='identity-s' data-index="5" bindtap='identityClick'>
+      <image src='../../images/villager.jpg'></image>
+      <span>村民</span>
+      <view class='tips'>{{initPerson.villager}}</view>
+    </view>
+    <view class='identity-s' data-index="6" bindtap='identityClick'>
+      <image src='../../images/guard.jpg'></image>
+      <span>守卫</span>
+      <view class='tips'>{{initPerson.guard}}</view>
+    </view>
+    <view class='identity-s' data-index="7" bindtap='identityClick'>
+      <image src='../../images/prophet.jpg'></image>
+      <span>白痴</span>
+      <view class='tips'>{{initPerson.idiot}}</view>
+    </view>
+    <view class='identity-s' data-index="8" bindtap='identityClick'>
+      <image src='../../images/sheriff.png'></image>
+      <span>{{initPerson.sheriff}} 票</span>
+    </view>
+  </view>
+  <view class='identity' style='border:0'>
+    <view class='identity-s' data-index="9" bindtap='identityClick'>
+      <image src='../../images/villager.jpg'></image>
+      <span>未知</span>
+      <view class='tips'>0</view>
+    </view>
+    <view class='identity-s' data-index="10" bindtap='identityClick'>
+      <image src='../../images/guard.jpg'></image>
+      <span>未知</span>
+      <view class='tips'>0</view>
+    </view>
+    <view class='identity-s' data-index="11" bindtap='identityClick'>
+      <image src='../../images/prophet.jpg'></image>
+      <span>未知</span>
+      <view class='tips'>0</view>
+    </view>
+    <view class='identity-s' data-index="12" bindtap='identityClick'>
+      <image src='../../images/wolf.jpg'></image>
+      <span>未知</span>
+    </view>
+  </view>
+  <view class='btnCreate'>
+    <van-button plain hairline loading='{{loading}}' loading-text='创建中...' type="danger" bind:click="btnCreate">创建房间</van-button>
+  </view>
+</view>
+
+<van-toast id="van-toast" />

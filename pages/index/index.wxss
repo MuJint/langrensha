@@ -1,0 +1,64 @@
+/**index.wxss**/
+
+.box {
+  background-image: url(https://yzxtapi.xnxv.cn/yzxt/img/background.jpeg);
+  background-size: cover;
+}
+
+.container {
+  display: left;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 100rpx 0 0 30rpx;
+  box-sizing: border-box;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.index_img {
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  left: 280rpx;
+}
+
+._room {
+  width: 700rpx;
+  height: 300rpx;
+  border-radius: 15rpx;
+  border: 1px solid #ccc;
+  margin: 70rpx 0 0 23rpx;
+}
+
+._room image {
+  height: 300rpx;
+  width: 200rpx;
+  float: right;
+  margin: 0 20rpx 0 0;
+}
+
+._room span {
+  font-family: Arial;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  left: 100rpx;
+  top: 120rpx;
+  color: rgba(255, 255, 255, 0.596);
+  box-shadow:1px 1px 1px #ccc;
+}

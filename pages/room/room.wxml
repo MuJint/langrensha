@@ -1,0 +1,92 @@
+<!--pages/room/room.wxml-->
+<view class='container' style='height:{{winHeight}}px'>
+  <view class='context'>
+    <view class='context-l'>
+      <view class='user' data-index='7' bindtap='avatarClick'>
+        <image src='{{gamer[6].avatarUrl}}'></image>
+        <view class='tips'>7</view>
+      </view>
+      <view class='user' data-index='6' bindtap='avatarClick'>
+        <image src='{{gamer[5].avatarUrl==""?"":gamer[5].avatarUrl}}'></image>
+        <view class='tips'>6</view>
+      </view>
+      <view class='user' data-index='5' bindtap='avatarClick'>
+        <image src='{{gamer[4].avatarUrl}}'></image>
+        <view class='tips'>5</view>
+      </view>
+      <view class='user' data-index='4' bindtap='avatarClick'>
+        <image src='{{gamer[3].avatarUrl}}'></image>
+        <view class='tips'>4</view>
+      </view>
+      <view class='user' data-index='3' bindtap='avatarClick'>
+        <image src='{{gamer[2].avatarUrl}}'></image>
+        <view class='tips'>3</view>
+      </view>
+      <view class='user' data-index='2' bindtap='avatarClick'>
+        <image src='{{gamer[1].avatarUrl}}'></image>
+        <view class='tips'>2</view>
+        <view class='{{gamer[1].userId==gamerId?"ident":"none"}}'>{{gamer[1].simple_I}}</view>
+      </view>
+      <view class='user' data-index='1' bindtap='avatarClick'>
+        <image src='{{gamer[0].avatarUrl}}'></image>
+        <view class='tips'>1</view>
+        <view class='{{gamer[0].userId==gamerId?"ident":"none"}}'>{{gamer[0].simple_I}}</view>
+      </view>
+    </view>
+    <view class='record'>
+      <view class='zj'>
+        <view class='user' data-index='8' bindtap='avatarClick'>
+          <image src='{{gamer[7].avatarUrl}}'></image>
+          <view class='tips'>8</view>
+        </view>
+        <view class='user' data-index='9' bindtap='avatarClick'>
+          <image src='{{gamer[8].avatarUrl}}'></image>
+          <view class='tips'>9</view>
+        </view>
+      </view>
+      <view class='room_no'>
+        <span>1101532</span>
+      </view>
+      <view class='re'>
+        <scroll-view style='height:650rpx;' scroll-y="true">
+          <view>
+            <text>{{currentInput}}</text>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class='context-r'>
+      <view class='user' data-index='10' bindtap='avatarClick'>
+        <image src='{{gamer[9].avatarUrl}}'></image>
+        <view class='tips'>10</view>
+      </view>
+      <view class='user' data-index='11' bindtap='avatarClick'>
+        <image src='{{gamer[10].avatarUrl}}'></image>
+        <view class='tips'>11</view>
+      </view>
+      <view class='user' data-index='12' bindtap='avatarClick'>
+        <image src='{{gamer[11].avatarUrl}}'></image>
+        <view class='tips'>12</view>
+      </view>
+      <view class='user' data-index='13' bindtap='avatarClick'>
+        <image src='{{gamer[12].avatarUrl}}'></image>
+        <view class='tips'>13</view>
+      </view>
+      <view class='user' data-index='14' bindtap='avatarClick'>
+        <image src='{{gamer[13].avatarUrl}}'></image>
+        <view class='tips'>14</view>
+      </view>
+      <view class='user' data-index='15' bindtap='avatarClick'>
+        <image src='{{gamer[14].avatarUrl}}'></image>
+        <view class='tips'>15</view>
+      </view>
+      <view class='user' data-index='16' bindtap='avatarClick'>
+        <image src='{{gamer[15].avatarUrl}}'></image>
+        <view class='tips'>16</view>
+      </view>
+    </view>
+  </view>
+  <view class='bot'></view>
+</view>
+
+<van-toast id="van-toast" />

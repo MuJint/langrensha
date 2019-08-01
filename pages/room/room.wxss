@@ -1,0 +1,122 @@
+/* pages/room/room.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+  background-image: url(https://yzxtapi.xnxv.cn/yzxt/img/wolf_avatar.png);
+  background-color: black;
+}
+
+.context {
+  width: 750rpx;
+  min-height: 1000rpx;
+}
+
+.context .context-l {
+  width: 181rpx;
+  height: 100%;
+  float: left;
+}
+
+.context .context-r {
+  width: 181rpx;
+  height: 100%;
+  float: left;
+}
+
+.context .user {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 130rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.316);
+  margin: 20rpx;
+  position: relative;
+}
+
+.context .record {
+  width: 388rpx;
+  height: 100%;
+  float: left;
+}
+
+.context .zj {
+  width: 388rpx;
+  height: 181rpx;
+  float: left;
+}
+
+.context .zj .user {
+  float: left;
+  margin: 20rpx 31rpx;
+}
+
+.context .room_no {
+  width: 388rpx;
+  height: 100rpx;
+  margin-bottom: -100rpx;
+}
+
+.context .room_no span {
+  color: #fff;
+  font-size: 30rpx;
+  margin-left: 130rpx;
+}
+
+.context .record .re {
+  width: 388rpx;
+  height: 650rpx;
+  float: left;
+  border: 1rpx solid rgba(255, 255, 255, 0.1);
+  margin-top: 100rpx;
+}
+
+.context .re text {
+  color: #fff;
+  font-size: 25rpx;
+  padding: 15rpx;
+}
+
+.context .re view {
+  width: 388rpx;
+  text-align: center;
+}
+
+.context .tips {
+  position: absolute;
+  color: #fff;
+  font-size: 25rpx;
+  background-color: rgba(95, 38, 19, 0.582);
+  width: 35rpx;
+  height: 35rpx;
+  line-height: 17px;
+  left: 80%;
+  top: -13rpx;
+  text-align: center;
+  -webkit-border-radius: 24px;
+  border-radius: 35rpx;
+}
+
+.context .user image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 130rpx;
+  background-size: cover;
+}
+
+.context .ident {
+  position: absolute;
+  color: #fff;
+  font-size: 25rpx;
+  width: 35rpx;
+  height: 35rpx;
+  line-height: 17px;
+  left: 60%;
+  text-align: center;
+  -webkit-border-radius: 24px;
+  border-radius: 35rpx;
+  bottom: 15rpx;
+}
+
+.none{
+  display: none;
+}
